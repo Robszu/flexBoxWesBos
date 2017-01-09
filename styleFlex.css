@@ -1,0 +1,55 @@
+.container {   /*flex container */
+display: flex; /* po calej szerokości */
+display: inline-flex; /* w obrębie */
+height: 100vh; /* 100% view port height*/
+min-height: 100vh;
+border: 10px solid goldenrod; /* color: goldenrod */
+flex-direction: row; /* default direction of container */
+flex-direction: column; /* from top to bottom, jak by uzyc inline-flex to nie zamje calej szerokosci z gory do dolu tylko szerokosc pojedynczego elementu */
+flex-direction: row-reverse; /* from right to left, other direction */
+flex-direction: column-reverse; /* from bottom to top */
+flexwrap: nowrap; /* default, nothig happen */
+flex-wrap: wrap; /* makes 300 px and distribut as many as posible in one line and then to another */
+flex-wrap: wrap-reverse; /* from bottom to top and from left to right like the wrap */
+  /* main Axis and (vertical) cross Axis */
+justify-content: flex-start; /* default, to the left or top*/
+justify-content: flex-end; /* to the right or to the bottom */
+justify-content: space-between; /* can see space when container is bigger than items */
+justify-content: space-around; /* space on the left and right as well */
+justify-content: center;
+align-items: center; /* it's for cross axis  and need height to work! */
+align-items: stretch; /* default */
+align-items: flex-start;
+align-items: flex-end; /* from bottom */
+align-items: baseline; /* looks at the bottom of text and make shure they are aligned properly */
+
+}
+
+.box {  /* flex item */
+  width: 300px; /* it's gonna try 300px for each item, but if not space it will make flex */
+  width: 33.33333%; /* no empty space on the right in the container, no width in px only % */
+  margin: 10px; /*will break the line  */
+  margin: calc(33.33333% - 20px); /* fix above */
+  padding: 10px; /* instead of margin, then no calc */
+  border: 10px solid mistyrose; /* instead of margin, then no calc, new color */
+  flex: 1; /*evenly distributed (equally)*/
+  order:0;  /* default is 0, good to use in mobile design if we want to change order html elements*/
+  order:-1; /* can be negative as well. If someone select, it selecting acording to html order not css! */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
