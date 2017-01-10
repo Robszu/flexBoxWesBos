@@ -38,6 +38,10 @@ align-items: baseline; /* looks at the bottom of text and make shure they are al
 
 }
 
+.box9 {
+  align-self: flex-end; /* overwrite align-items in flex-container */
+}
+
 
 
 
