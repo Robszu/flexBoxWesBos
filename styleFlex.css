@@ -32,10 +32,14 @@ align-items: baseline; /* looks at the bottom of text and make shure they are al
   margin: calc(33.33333% - 20px); /* fix above */
   padding: 10px; /* instead of margin, then no calc */
   border: 10px solid mistyrose; /* instead of margin, then no calc, new color */
-  flex: 1; /*evenly distributed (equally)*/
+  flex: 1; /*evenly distributed (equally), takes exactly the same space regardles from content*/
+  flex: 5; /* takes 5 times more space if there is space or there is not enough space */
   order:0;  /* default is 0, good to use in mobile design if we want to change order html elements*/
   order:-1; /* can be negative as well. If someone select, it selecting acording to html order not css! */
-
+  flex-grow: 1; /* this 2 are the same as flex: 1; */
+  flex-shrink: 1; /* what happens when no space */
+  flex-basis: ; /* how big element should be */
+  flex: 10 5 400px; /* grow shrink basis */
 }
 
 .box9 {
