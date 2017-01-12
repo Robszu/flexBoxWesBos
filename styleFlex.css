@@ -46,6 +46,11 @@ align-items: baseline; /* looks at the bottom of text and make shure they are al
   align-self: flex-end; /* overwrite align-items in flex-container */
 }
 
+.wrapper > * { /* every child of parent */
+  order: 999; /* big number then what you want first give 1 and then bigger */
+
+}
+
 
 
 
